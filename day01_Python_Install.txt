@@ -1,0 +1,162 @@
+공유 폴더 이용하기
+
+1. 탐색기 주소창에 \\192.168.201.100
+
+
+2. 파이썬 설치
+
+https://www.python.org/
+
+Download - Windows - Python 3.7.2
+
+
+
+python-3.7.2.exe 파일을 우클릭 - 관리자 권한으로 실행
+
+Add Python 3.7 to PATH 체크
+
+Customize installation - Next - Customize install location
+
+	C:\Python\Python37-32
+
+Install - Close
+
+
+3. 확인하기
+
+
+win + R (실행) - cmd
+
+C:\> python
+
+>>>
+
+
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+
+
+
+=========================================================================================================
+
+파이썬 통합 개발 도구 Eclipse 설치하기
+
+	Eclipse는 Java의 개발도구이며, Java외의 다른 프로그램도 개발을 할 수 있는 프로그램
+
+
+	1. 자바 설치 (이미 설치되어 있으면 Skip)
+
+		C:\>java -version
+		실행해서 버전 정보가 출력되면 이미 설치되어 있음
+		만약 자바가 없다면 jdk-8u201을 실행해서 설치하기
+
+
+	2. 이클립스 설치
+		
+		eclipse-python 폴더에 설치
+		설치가 모두 완료되면
+		workspace-python 폴더 생성하여 실행
+		
+
+	3. 이클립스 PyDev 추가 설치
+
+		
+		Menu - Help - Install New Software
+
+		http://pydev.org/updates
+
+		PyDev 항목 체크 이후 다음 - 다음 - 동의 - 완료
+
+		Install Anyway - Restart Now
+
+
+	4. 환경 설정
+
+		Menu - Window - Preference
+
+		General - Appearance - Colors and fonts
+					Basic
+					Text font
+					Consolas / 굵게 / 16
+
+		General - Workspace - encoding : UTF-8
+
+
+
+
+def fib(n):
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+    
+fib(1000)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fib(1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

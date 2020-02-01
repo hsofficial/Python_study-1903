@@ -1,0 +1,57 @@
+﻿C:\> pip install pyinstaller
+	// pip : 파이썬 패키지 관리자
+	// pip를 통해서 pyinstaller라는 패키지를 설치
+
+	.
+	.
+	.
+
+C:\Python\test0402> copy con test.py
+
+print("Hello, world!")
+
+for i in range(5,-1,-1):
+    print("{:02d} : {:02d}".format(i//60, i%60))
+
+print("End")
+^Z
+
+	1개 파일이 복사되었습니다
+
+C:\Python\test0402> pyinstaller test.py -F
+	// 단독 실행파일(exe)로 만들자
+
+C:\Python\test0402> dir /w
+
+[.]           [..]          [build]       [dist]
+test.py       test.spec     [__pycache__]
+
+
+C:\Python\test0402> cd dist
+
+C:\Python\test0402\dist> dir /w
+
+[.]        [..]       test.exe
+
+
+
+C:\Python\test0402\dist> test
+Hello, world!
+00 : 05
+00 : 04
+00 : 03
+00 : 02
+00 : 01
+00 : 00
+End
+
+
+-F : 단독 실행 파일로 만들기, 옵션을 주지 않으면 DLL을 파일을 같이 복사해야한다
+-i : 아이콘의 위치를 지정하기. (.ico, .exe의 아이콘을 똑같이 만들어낸다)
+
+
+
+
+
+
+
